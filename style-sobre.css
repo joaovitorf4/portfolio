@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#base {
+    gap: 4em;
+    align-items: center;
+    margin-right: 50px;
+    padding-bottom: 4em;
+}
+
+h1, h2 {
+    animation-duration: 1s;
+    animation-name: opacitying;
+}
+
+img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    animation: 1s brighting linear infinite alternate-reverse;
+    align-self: center;
+}
+
+div h1 {
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h1:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 4px 4px;
+}
+
+h1:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+}
+
+h2:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 2px 2px;
+}
+
+h2:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+strong {
+    color: #6900F2;
+    text-shadow: none;
+}
+
+@keyframes opacitying {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes brighting {
+    from {
+        filter: drop-shadow(0 0mm 2mm #6900F2);
+    }
+  
+    to {
+        filter: drop-shadow(0 0mm 6mm #6900F2);
+    }
+  }
+
+@media (orientation: portrait) {
+    #base {
+        gap: 4em;
+        padding: 0px 30px;
+        padding-bottom: 4em;
+    }
+
+    h1 {
+        font-size: 6vh;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    img {
+        margin: auto;
+        width: 50vw;
+        height: 50vw;
+    }
+}

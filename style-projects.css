@@ -1,0 +1,206 @@
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#base {
+    margin-bottom: 4em;
+}
+
+#base #div-projects {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#base #div-projects a {
+    display: block;
+    font-family: 'Courier Prime', monospace;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#div-projects {
+    display: flex;
+    gap: 10vh;
+}
+
+#div-projects img {
+    border-radius: 10px;
+    max-width: 35vw;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.projects-div2 {
+    width: 70vw;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+    margin: auto;
+}
+
+#div-projects a {
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#div-projects a:hover {
+    transition: all .2s ease-in;
+    background-color: #6900f242;
+    transform: scale(1.1);
+}
+
+#div-projects a:not(:hover) {
+    transition: all .2s ease-in;
+    background-color: none;
+    transform: scale(1);
+}
+
+.projects-div1 {
+    min-width: 35vw;
+}
+
+.projects-div1 img {
+    text-align: center;
+}
+
+.tech-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.tech-icons img {
+    width: 5vw;
+}
+
+.adjust-img-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.adjust-img-preview img {
+    filter: drop-shadow(0 0mm 2mm #6900F2);
+}
+
+#div-projects {
+    margin-right: 50px;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 1em;
+}
+
+div h1 {
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-size: 9vh;
+}
+
+h1:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 4px 4px;
+}
+
+h1:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+h2 {
+    font-size: 6vh;
+    margin-top: 3px;
+    color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+h2:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 2px 2px;
+}
+
+h2:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+
+p {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+}
+
+strong {
+    color: #6900F2;
+    text-shadow: none;
+}
+
+@keyframes opacitying {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes brighting {
+    from {
+        filter: drop-shadow(0 0mm 2mm #6900F2);
+    }
+  
+    to {
+        filter: drop-shadow(0 0mm 6mm #6900F2);
+    }
+}
+
+@media (orientation: portrait){
+    #div-projects {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1.65) {
+    .projects, .projects * {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1.4) {
+    .projects, .projects * {
+        max-width: 50vw;
+    }
+}
+
+

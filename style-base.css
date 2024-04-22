@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 999;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+#base {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 400px;
+}
+
+#base {
+    animation-duration: 1s;
+    animation-name: opacitying;
+}
+
+#first-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    border: 0.2px solid gray;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    min-width: 350px;
+    height: 37.5vh;
+    text-align: center;
+    line-height: 37.5vh;
+}
+
+#logo:hover {
+    transition: all .2s ease-in;
+    text-shadow: 8px 4px #6900F2;
+}
+
+#logo:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: 0px 0px #6900F2;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-width: 350px;
+    border: 0.2px solid gray;
+    min-height: 12.5vh;
+}
+
+#contacts a:hover {
+    transition: all .2s ease-in;
+    transform: scale(2);
+}
+
+#contacts a:not(:hover) {
+    transition: all .2s ease-out;
+    transform: scale(1.5);
+}
+
+h1 {
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+h1:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 4px 4px;
+}
+
+h1:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+ul a li:hover {
+    transition: all .3s ease-in;
+    font-size: larger;
+    background-color: #6900f242;
+}
+
+ul a li {
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 0.2px solid gray;
+    min-height: 12.5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: grey;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6900F2;
+}
+
+@media (orientation: portrait) {
+    nav {
+        width: 100vh;
+        height: 16vh;
+    }
+    
+    #first-nav {
+        width: 100vw;
+        flex-direction: row;
+    }
+    
+    #second-nav {
+        display: flex;
+        height: 600px;
+    }
+    
+    #logo {
+        font-size: 4vh;
+        min-width: 0;
+        width: 40vw;
+        height: 8vh;
+        line-height: 8vh;
+    }
+    
+    #contacts {
+        gap: 4vw;
+        min-width: 0;
+        min-height: 0;
+        width: 60vw;
+        height: 8vh;
+    }
+
+    .nav-a {
+        width: 25vw;
+        height: 8vh;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+    
+    ul a li {
+        height: 8vh;
+        min-height: 0;
+    } 
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    #base {
+        margin-top: 16vh;
+        margin: auto;
+        margin-top: 20vh;
+    }
+}

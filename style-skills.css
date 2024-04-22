@@ -1,0 +1,99 @@
+#base {
+    max-width: 65vw;
+}
+
+.techs-div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.skills-div {
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    animation-duration: 1s;
+    animation-name: opacitying;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+h1:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 3px 3px;
+}
+
+h1:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Arvo', serif;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h2:hover {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 4px 4px;
+}
+
+h2:not(:hover) {
+    transition: all .2s ease-in;
+    text-shadow: #6900F2 0px 0px;
+}
+
+.skills-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 40px;
+    color: white;
+    font-family: 'Arvo', serif;
+    list-style-type:lower-alpha;
+    margin-left: 1em;
+}
+
+.techs-div img {
+    max-width: 8vh;
+}
+
+@keyframes opacitying {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+@media (orientation: portrait) {
+    h2 {
+        font-size: 4vh;
+    }
+
+    .techs-div {
+        justify-content: center;
+    }
+
+    .skills-div li {
+        font-size: 3vh;
+    }
+
+    .skills-div ul {
+        max-width: 65vw;
+    }
+}
